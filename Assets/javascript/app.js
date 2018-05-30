@@ -116,7 +116,7 @@ function decrement(){
     $("display").html("Time Remaining: " + timer);
     timer--;
 
-    if(timer === 0) {
+    if(timer === 1) {
         unaswered++;
         stop();
         $("#triviaAnswer").html("<p>Time's Up!! The correct answer is: " + picked.options[picked.answer] + " </p>");
@@ -295,5 +295,24 @@ $("button").on("click", "#start", start);
 //      answer: "R.L Stin"
 //  },
 // ];
+
+// function displayQuestions() {
+//     console.log("displaying questions")
+// }
+
+
+// setTimeout(displayQuestions, 1000)
+
+// var intervailTimer = setInterval(displayQuestions, 2000)
+
+// var stop = document.getElementById ("stop");
+// stop.onClick = function() {
+//     clearInterval(intervailTimer);
+// }
+
+
+
+
+
 
 
